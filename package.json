@@ -17,9 +17,13 @@
     "url": "git://github.com/KarlDoyle/angular-es6-webpack-starter.git"
   },
   "dependencies": {
-    "angular": "^1.5.3",
+    "aframe": "^0.6.0",
+    "angular": "^1.6.5",
     "angular-ui-bootstrap": "^2.5.0",
-    "angular-ui-router": "1.0.0-beta.1"
+    "angular-ui-router": "^1.0.0-beta.1",
+    "bootstrap-sass": "^3.3.7",
+    "three": "^0.86.0",
+    "three-gltf2-loader": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.1",
