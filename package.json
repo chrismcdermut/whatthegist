@@ -18,8 +18,13 @@
   },
   "dependencies": {
     "angular": "^1.5.3",
+<<<<<<< HEAD
+    "angular-ui-bootstrap": "^2.5.0",
+    "angular-ui-router": "1.0.0-beta.1",
+=======
     "angular-ui-router": "1.0.0-beta.1",
     "bootstrap-sass": "^3.3.7"
+>>>>>>> f1bbee8ad05fea653255ba4cf57b5dcb2637c626
   },
   "devDependencies": {
     "autoprefixer": "^6.0.1",
