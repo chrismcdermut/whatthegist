@@ -1,4 +1,5 @@
 function homeState($stateProvider, $urlRouterProvider) {
+
     $stateProvider
         .state('home', {
             url: '/home',
