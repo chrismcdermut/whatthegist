@@ -1,10 +1,11 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
-import example from './example/example.module';
+import home from './home/index';
+import appConfig from './app-config';
 
 require('./main.scss');
 
 angular.module('app', [
-  uirouter,
-  'example'
-]);
+    uirouter,
+    'home'
+]).config(appConfig);
