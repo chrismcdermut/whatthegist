@@ -10,8 +10,9 @@
     <meta name="theme-color" content="#EE3268">
     <link rel="manifest" href="manifest.json">
   </head>
-  <body> <!-- ng-strict-di -->
-    <div id="app-wrapper" ui-view class="container"></div>
+  <body class="container"> <!-- ng-strict-di -->
+    <splash-directive></splash-directive>
+    <div id="app-wrapper" ui-view></div>
   </body>
   <script type="text/javascript">
     if ('serviceWorker' in navigator) {
