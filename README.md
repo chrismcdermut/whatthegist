@@ -1,3 +1,10 @@
+**TEAM NOTES**
+For running locally, run 'npm start' and go to localhost:9000
+
+
+
+
+
 
 [![NPM version](https://badge.fury.io/js/angular-es6-webpack-starter.svg)](http://badge.fury.io/js/angular-es6-webpack-starter)
 [![GitHub version](https://badge.fury.io/gh/KarlDoyle%2Fangular-es6-webpack-starter.svg)](http://badge.fury.io/gh/KarlDoyle%2Fangular-es6-webpack-starter)
@@ -46,4 +53,3 @@ npm start
 ```
 
 go to [http://0.0.0.0:9000](http://0.0.0.0:9000) or [http://localhost:9000](http://localhost:9000) in your browser
-
