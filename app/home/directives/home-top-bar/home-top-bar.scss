@@ -1,0 +1,19 @@
+#home-top-bar-container {
+	background-color: transparent;
+	border: none;
+	.container {
+		padding: 0;
+		.navbar-header {
+			margin: 0;
+			padding-right: 10px;
+			padding-top: 5px;
+			#camera-icon {
+				background-image: url('./camera-icon.png');
+				background-size: 50px 50px;
+				cursor: pointer;
+				height: 50px;
+				width: 50px;
+			}
+		}
+	}
+}
