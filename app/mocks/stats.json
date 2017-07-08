@@ -1,0 +1,54 @@
+{
+  "batman": {
+    "stats": {
+      "intelligence": 97,
+      "strength": 26,
+      "speed": 27,
+      "durability": 50,
+      "power": 47,
+      "combat": 100
+    },
+    "powers": "Indomitable Will, Intimidation, Interrogation, Peak Human Conditioning, Martial Arts Master",
+    "equipment": "Batsuit, Utility Belt, Batmobile",
+    "weaknesses": "Water Deprivation, Waterbearer Abuse"
+  },
+  "wonder-woman": {
+    "stats": {
+      "intelligence": 83,
+      "strength": 96,
+      "speed": 83,
+      "durability": 93,
+      "power": 86,
+      "combat": 96
+    },
+    "powers": "Divine Empowerment, Superhuman Strength, Superhuman Durability, Superhuman Reflexes, Superhuman Agility",
+    "equipment": "Bracelets of Submission, Gold Armor, Lasso of Truth, Tiara",
+    "weaknesses": "Vulnerability to Piercing Weapons"
+  },
+  "superman": {
+    "stats": {
+      "intelligence": 84,
+      "strength": 97,
+      "speed": 94,
+      "durability": 95,
+      "power": 94,
+      "combat": 78
+    },
+    "powers": "Kryptonian Physiology, Solar Energy Absorption, Superhuman Strength, Invulnerability, Longevity",
+    "equipment": "Fortress of Solitude",
+    "weaknesses": "Magic, Kryptonite, Solar Energy"
+  },
+  "aquaman": {
+    "stats": {
+      "intelligence": 71,
+      "strength": 83,
+      "speed": 69,
+      "durability": 80,
+      "power": 80,
+      "combat": 80
+    },
+    "powers": "Atlantean Biological Adaptation, Amphibious Nature, Enhanced Sight, Enhanced Hearing, Energy Heat Resistance",
+    "equipment": "Waterbearer Hand, Cybernetic Hand",
+    "weaknesses": "Water Deprivation, Waterbearer Abuse"
+  }
+}
