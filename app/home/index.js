@@ -3,11 +3,16 @@ import homeFactory from './home-factory';
 import homeComponent from './home-component';
 import homeConfig from './home-config';
 import homeTopBar from './directives/home-top-bar/index';
+import cameraView from './directives/camera-view/index';
+import characterSelection from './directives/character-selection/index';
+
 
 require('./home.scss');
 
 angular.module('home', [])
     .directive('homeTopBar', homeTopBar)
+    .directive('cameraView', cameraView)
+    .directive('characterSelection', characterSelection)
     .factory('homeFactory', homeFactory)
     .component('home', homeComponent)
     .config(homeConfig);

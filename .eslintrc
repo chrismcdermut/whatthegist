@@ -43,14 +43,14 @@
     "angular/rest-service": [2,"Restangular"],
     "angular/watchers-execution": [2,"$apply"],
     "angular/angularelement": 2,
-    "angular/window-service": 2,
+    "angular/window-service": 0,
     "angular/timeout-service": 2,
     "angular/no-jquery-angularelement": 2,
-    "angular/log": 2,
+    "angular/log": 0,
     "angular/json-functions": 2,
     "angular/interval-service": 2,
     "angular/foreach": 2,
-    "angular/document-service": 2,
+    "angular/document-service": 0,
     "angular/definedundefined": 2,
     "no-bitwise": 2,
     "camelcase": [
@@ -138,13 +138,7 @@
     ],
     "no-mixed-spaces-and-tabs": 2,
     "no-trailing-spaces": 2,
-    "space-unary-ops": [
-      2,
-      {
-        "nonwords": false,
-        "overrides": {}
-      }
-    ],
+    "space-unary-ops": [0],
     "keyword-spacing": [
       2,
       {}

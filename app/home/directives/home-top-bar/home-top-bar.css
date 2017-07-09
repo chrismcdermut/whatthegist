@@ -9,9 +9,9 @@
       padding-top: 5px; }
       #home-top-bar-container .container .navbar-header #camera-icon {
         background-image: url("./camera-icon.png");
-        background-size: 50px 50px;
+        background-size: 35px 35px;
         cursor: pointer;
-        height: 50px;
-        width: 50px; }
+        height: 35px;
+        width: 35px; }
 
 /*# sourceMappingURL=home-top-bar.css.map */
