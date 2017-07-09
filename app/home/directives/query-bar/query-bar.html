@@ -7,7 +7,9 @@
             <div class="search-icon"></div>
             <div class="mic-icon"></div>
         </div>
-        <input type="text" id="query" name="query" ng-disabled="!characterSelected">
-        <label for="query" ng-hide="characterSelected">Tap</label>
+        <form ng-submit="submitToWatson()">
+            <input type="text" id="query" name="query" ng-disabled="!characterSelected" ng-model="formInput">
+            <label for="query" ng-hide="characterSelected">Tap</label>
+        </form>
     </div>
 </div>
