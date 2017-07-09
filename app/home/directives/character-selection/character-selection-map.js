@@ -11,12 +11,7 @@ var characterSelection = [
         'enabled': true,
         'src': 'btn-batman',
         'figureOne': 'fig-batman',
-        'figureTwo': 'fig-batman-2x',
-        'suggestedQuestions': {
-            "How many batmobiles are there": "placeholder answer",
-            "How many crimes has he solved": "placeholder answer",
-            "Who's his strongest enemy": "placeholder answer"
-        }
+        'figureTwo': 'fig-batman-2x'
     },
     {
         'name': 'Wonder Woman',
