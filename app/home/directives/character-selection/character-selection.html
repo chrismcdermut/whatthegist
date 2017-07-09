@@ -1,11 +1,12 @@
 <div id="character-selection-container">
-        <div class="character-row" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
-            <div class="col-xs-2 character-icon-container text-center" ng-repeat="n in [1, 2, 3, 4, 5]">
-                <img class="character-icon" ng-click="clickCharacter(characters[leftIndex + $index])" ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characters[leftIndex + $index].src}}.png" ng-class="{'selected': $index === 2}">
-            </div>
+    <div class="character-row" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
+        <div class="col-xs-2 character-icon-container text-center" ng-repeat="n in [1, 2, 3, 4, 5]">
+            <img class="character-icon" ng-click="clickCharacter(characters[leftIndex + $index])" ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characters[leftIndex + $index].src}}.png" ng-class="{'selected': $index === 2}">
         </div>
-   <div class="camera-row">
-     <div class="camera-container">
-       <img src="https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-camera.png">
+    </div>
+    <div class="camera-row">
+        <div class="camera-container">
+            <img src="https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-camera.png">
+        </div>
     </div>
 </div>

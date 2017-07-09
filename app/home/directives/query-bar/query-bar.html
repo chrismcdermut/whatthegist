@@ -1,16 +1,7 @@
-<div id="query-bar">
-	<ul ng-repeat="item in getTopFAQ()">
-		<li>{{item.question}}</li>
-	</ul>
-
-	<form>
-		<input class="querybar" list="questions" type="text" name="query-bar" placeholder="test">
-		<datalist id="questions">
-		  <option value="Internet Explorer">
-		  <option value="Firefox">
-		  <option value="Chrome">
-		  <option value="Opera">
-		  <option value="Safari">
-		</datalist>
-	</form>
+<div id="query-bar-container">
+    <div class="suggested-questions-container">
+        <div class="question" ng-repeat="(question, answer) in suggestedQuestions">{{$index + 1}}. {{question}}?</div>
+    </div>
+    <input type="text" id="query" name="query" ng-disabled="!characterSelected">
+    <label for="query">Tap</label>
 </div>
