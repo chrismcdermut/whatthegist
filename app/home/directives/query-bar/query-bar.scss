@@ -1,0 +1,16 @@
+#query-bar {
+	position: absolute;
+	top: 500px;
+	left: 0;
+
+	.querybar {
+		margin: 0px 30px 30px 40px;
+		width: 300px;
+		background: rgba(black, 0.5);
+		font-weight: 300;
+		color: white;
+		border-radius: 10px;
+		opacity: 0.6;
+	}
+
+}
