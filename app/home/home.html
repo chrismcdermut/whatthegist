@@ -2,12 +2,12 @@
     <character-display></character-display>
     <query-bar></query-bar>
     <character-selection></character-selection>
-    <!--<div class="watson-query-results">-->
-        <!--<ul ng-hide="isNoResults">-->
-            <!--<li>{{rankedResult[0] | uppercase}}</li>-->
-            <!--<li>{{rankedResult[1] | uppercase}}</li>-->
-            <!--<li>{{rankedResult[2] | uppercase}}</li>-->
-        <!--</ul>-->
-        <!--<span class="no-results-found" ng-show="isNoResults">No Results Found!</span>-->
-    <!--</div>-->
+    <div class="watson-query-results" ng-hide="noQuestionAsked">
+        <ul ng-hide="isNoResults">
+            <li>{{rankedResult[0] | uppercase}}</li>
+            <li>{{rankedResult[1] | uppercase}}</li>
+            <li>{{rankedResult[2] | uppercase}}</li>
+        </ul>
+        <span class="no-results-found" ng-show="isNoResults">No Results Found!</span>
+    </div>
 </div>
