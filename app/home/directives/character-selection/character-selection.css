@@ -1,0 +1,14 @@
+#character-selection-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; }
+  #character-selection-container .col-half-offset {
+    margin-left: 4.16667%; }
+  #character-selection-container .character-icon-container .character-icon {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 70px;
+    width: 70px; }
+
+/*# sourceMappingURL=character-selection.css.map */

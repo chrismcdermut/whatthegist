@@ -1,6 +1,7 @@
 'use strict';
 
-/* @ngInject */
+require('./splash.scss')
+
 function splashDirective($timeout) {
 
     return {

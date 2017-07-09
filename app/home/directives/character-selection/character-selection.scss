@@ -1,0 +1,17 @@
+#character-selection-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	.col-half-offset {
+		margin-left:4.166666667%
+	}
+	.character-icon-container {
+		.character-icon {
+			border-radius: 50%;
+			cursor: pointer;
+			height: 70px;
+			width: 70px;
+		}
+	}
+}

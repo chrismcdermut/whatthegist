@@ -1,6 +1,5 @@
 require('./home-top-bar.scss');
 
-import homeTopBarHTML from './home-top-bar.html';
 import homeTopBarController from './home-top-bar-controller';
 
 function homeTopBarDirective() {
@@ -8,7 +7,7 @@ function homeTopBarDirective() {
         scope: {},
         restrict: 'E',
         replace: true,
-        template: homeTopBarHTML,
+        template: require('./home-top-bar.html'),
         controller: homeTopBarController
     };
 }
