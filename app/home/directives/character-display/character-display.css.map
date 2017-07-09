@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,4BAA6B;EAC5B,UAAU,EAAE,IAAI;EAGhB,qDAAyB;IACxB,UAAU,EAAE,KAAK",
+"mappings": "AAAA,4BAA6B;EAC5B,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,KAAK;EACV,KAAK,EAAE,IAAI;EAGX,qDAAyB;IACxB,UAAU,EAAE,KAAK",
 "sources": ["character-display.scss"],
 "names": [],
 "file": "character-display.css"
