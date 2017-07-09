@@ -94,6 +94,7 @@ function queryBarController($scope, watsonFactory, $log) {
             recognition.onresult = function(e) {
                 document.getElementById('query').value = e.results[0][0].transcript;
                 recognition.stop();
+                $scope.submitToWatson();
             };
 
             recognition.onerror = function(e) {
