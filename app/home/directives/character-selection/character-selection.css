@@ -1,0 +1,25 @@
+#character-selection-container {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+  #character-selection-container .container {
+    padding: 0; }
+    #character-selection-container .container .character-icon-container {
+      margin: 0 4px;
+      padding: 0 10px; }
+      #character-selection-container .container .character-icon-container .character-icon {
+        border-radius: 50%;
+        cursor: pointer;
+        height: 65px;
+        width: 65px; }
+        #character-selection-container .container .character-icon-container .character-icon.selected {
+          background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/btn-selection.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding: 3px;
+          height: 70px;
+          width: 70px; }
+
+/*# sourceMappingURL=character-selection.css.map */

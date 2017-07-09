@@ -2,3 +2,9 @@ html, body, #app-wrapper {
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/bg-office3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}

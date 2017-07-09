@@ -1,7 +1,8 @@
-function appConfig($urlRouterProvider) {
-    $urlRouterProvider.when('', '/home'); // We'll change this to splash page once it's up.
+function appConfig($urlRouterProvider, $httpProvider) {
+    $urlRouterProvider.when('', '/home');
     $urlRouterProvider.when('/', '/home');
-    $urlRouterProvider.when('/questions', '/home');
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
 }
 
 export default appConfig;

@@ -1,4 +1,5 @@
 #home-top-bar-container {
+	z-index: 1;
 	background-color: transparent;
 	border: none;
 	.container {
@@ -9,10 +10,10 @@
 			padding-top: 5px;
 			#camera-icon {
 				background-image: url('./camera-icon.png');
-				background-size: 50px 50px;
+				background-size: 35px 35px;
 				cursor: pointer;
-				height: 50px;
-				width: 50px;
+				height: 35px;
+				width: 35px;
 			}
 		}
 	}

@@ -1,18 +1,18 @@
 'use strict';
 
-/* @ngInject */
+require('./splash.scss');
+
 function splashDirective($timeout) {
 
     return {
-        transclude: true,
         restrict: 'E',
+        replace: true,
         scope: {},
         template: require('./splash.html'),
         link: function (scope) {
-            scope.showEl = true;
             $timeout(function() {
-                scope.showEl = false;
-            }, 2000);
+                scope.hideEl = true;
+            }, 3900);
         }
     };
 }
