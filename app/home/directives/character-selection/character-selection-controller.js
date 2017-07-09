@@ -11,21 +11,21 @@ function characterSelectionController($scope, $rootScope) {
     $scope.clickCharacter = clickCharacter;
 
     function swipeLeft() {
-      console.log('loggingswipe left');
         if ($scope.leftIndex + capacity < $scope.characters.length) {
             $scope.leftIndex++;
         }
     }
 
     function swipeRight() {
-      console.log('loggingswipe right');
         if ($scope.leftIndex > 0) {
             $scope.leftIndex--;
         }
     }
 
     function clickCharacter(character) {
-        $rootScope.$broadcast('character-clicked', character);
+        if (character.enabled) {
+            $rootScope.$broadcast('character-clicked', character);
+        }
     }
 }
 

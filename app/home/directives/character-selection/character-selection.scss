@@ -11,9 +11,8 @@
 				cursor: pointer;
 				height: 60px;
 				width: 60px;
-				&.selected {
-					//Need to figure out how to properly get the border around the center character
-					border-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/btn-selection.png") 30 stretch;
+				&.disabled {
+					filter: grayscale(100%);
 				}
 			}
 		}

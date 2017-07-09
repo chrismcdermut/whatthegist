@@ -1,3 +1,5 @@
+require('./character-display.scss');
+
 import characterDisplayController from './character-display-controller';
 
 function characterDisplayDirective() {
