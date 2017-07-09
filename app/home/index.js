@@ -2,7 +2,6 @@ import angular from 'angular';
 import homeFactory from './home-factory';
 import homeComponent from './home-component';
 import homeConfig from './home-config';
-import homeTopBar from './directives/home-top-bar/index';
 import cameraView from './directives/camera-view/index';
 import characterSelection from './directives/character-selection/index';
 import queryBar from './directives/query-bar/index';
@@ -11,7 +10,6 @@ import questions from './questions';
 require('./home.scss');
 
 angular.module('home', [])
-    .directive('homeTopBar', homeTopBar)
     .directive('cameraView', cameraView)
     .directive('characterSelection', characterSelection)
     .directive('queryBar', queryBar)

@@ -24,8 +24,7 @@
   .splash-container .image-container {
     margin-top: 4em; }
     .splash-container .image-container img {
-      display: inline-block;
-      transition: 1s; }
+      display: inline-block; }
       .splash-container .image-container img.green-lantern {
         margin-left: 1.5em; }
       .splash-container .image-container img.flash {
