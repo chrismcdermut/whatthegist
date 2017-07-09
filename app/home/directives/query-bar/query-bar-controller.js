@@ -1,10 +1,10 @@
 function queryBarController($scope) {
     $scope.characterSelected = false;
-    $scope.suggestedQuestions = {
-        "How many batmobiles are there": "111",
-        "How many crimes has he solved": "222",
-        "Who's his strongest enemy": "3333"
-    };
+
+    $scope.$on('character-clicked', function(event, character) {
+        $scope.characterSelected = true;
+        $scope.suggestedQuestions = character.suggestedQuestions ? character.suggestedQuestions : false;
+    });
 }
 
 export default queryBarController;

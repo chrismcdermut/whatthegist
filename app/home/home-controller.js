@@ -7,9 +7,9 @@ function homeController($scope) {
     $scope.showCharacterOne = false;
     $scope.$on('character-clicked', function(event, character) {
         if (currentCharacterOne == '') {
-            currentCharacterOne = character.character.name;
+            currentCharacterOne = character.name;
             $scope.showCharacterOne = true;
-            $scope.characterOneImagePath = character.character.figureOne;
+            $scope.characterOneImagePath = character.figureOne;
         } else {
             currentCharacterOne = '';
             $scope.showCharacterOne = false;
