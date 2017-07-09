@@ -44,8 +44,7 @@ function queryBarController($scope, watsonFactory, $log) {
                 $scope.$emit('gotAnswer', {answer: $scope.rankedResult});
             })
             .catch($log.log)
-    }
-
+    };
 
     function characterClicked(event, character) {
         var name = character.name;
@@ -71,6 +70,7 @@ function queryBarController($scope, watsonFactory, $log) {
         } else if (characterOne && characterTwo) {
             $scope.queryPlaceholder = 'Ask about ' + characterOne + ' and ' + characterTwo;
         } else {
+            document.getElementById('query').value = '';
             $scope.queryPlaceholder = '';
             $scope.characterSelected = false;
         }

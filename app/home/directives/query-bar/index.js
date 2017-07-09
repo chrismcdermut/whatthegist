@@ -1,6 +1,5 @@
 require('./query-bar.scss');
 
-import queryBarHTML from './query-bar.html';
 import queryBarController from './query-bar-controller';
 
 function queryBarDirective() {
@@ -8,7 +7,7 @@ function queryBarDirective() {
         scope: {},
         restrict: 'E',
         replace: true,
-        template: queryBarHTML,
+        template: require('./query-bar.html'),
         controller: queryBarController
     };
 }

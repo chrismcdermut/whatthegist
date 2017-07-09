@@ -1,0 +1,8 @@
+<div id="watson-panel" ng-hide="noQuestionAsked">
+    <ul ng-hide="isNoResults">
+        <li>{{rankedResult[0] | uppercase}}</li>
+        <li>{{rankedResult[1] | uppercase}}</li>
+        <li>{{rankedResult[2] | uppercase}}</li>
+    </ul>
+    <span class="no-results-found" ng-show="isNoResults">No Results Found!</span>
+</div>
