@@ -4,7 +4,7 @@
     </div>
     <div class="query-container">
         <div class="query-icon-container" ng-if="characterSelected">
-            <div class="search-icon"></div>
+            <div class="search-icon" ng-class="{'spinner-icon': callingWatson}"></div>
             <div class="mic-icon" ng-click="captureVoice()"></div>
         </div>
         <form id="askWatson" ng-submit="submitToWatson()">
