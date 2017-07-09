@@ -9,7 +9,8 @@ function queryBarDirective() {
         restrict: 'E',
         replace: true,
         template: queryBarHTML,
-        controller: queryBarController
+        controller: queryBarController,
+        controllerAs: 'qb'
     };
 }
 

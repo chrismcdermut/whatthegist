@@ -1,13 +1,10 @@
-<div id="query-bar">
-	<form>
-		<input class="querybar" list="questions" type="text" name="query-bar" placeholder="test">
-
-		<datalist id="questions">
-		  <option value="Internet Explorer">
-		  <option value="Firefox">
-		  <option value="Chrome">
-		  <option value="Opera">
-		  <option value="Safari">
-		</datalist>
-	</form>
+<div>
+	<div class="query-bar">
+		<form>
+			<input id="querybar" list="questions" type="text" name="query-bar" placeholder="test">
+		</form>
+	</div>
+	<ul id="qb-container">
+		<li ng-click="clickQuestion(question)" ng-repeat="question in qb.questions" class="question-list">{{ question }}</li>
+	</u>
 </div>
