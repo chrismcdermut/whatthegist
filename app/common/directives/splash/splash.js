@@ -10,10 +10,10 @@ function splashDirective($timeout) {
         scope: {},
         template: require('./splash.html'),
         link: function (scope) {
-            scope.showEl = true;
+            scope.hideEl = false;
             $timeout(function() {
-                scope.showEl = false;
-            }, 2000);
+                scope.hideEl = true;
+            }, 4000);
         }
     };
 }
