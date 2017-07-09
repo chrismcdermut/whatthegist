@@ -73,6 +73,12 @@ function queryBarController($scope, watsonFactory, $log) {
             $scope.characterSelected = false;
         }
     });
+
+	$scope.$on('clearSearchResults', function(){
+		$scope.queryPlaceholder = '';
+		$scope.characterSelected = false;
+		$scope.formInput = '';
+	});
 }
 
 export default queryBarController;
