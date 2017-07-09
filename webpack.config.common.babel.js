@@ -6,6 +6,11 @@ import CleanWebpackPlugin from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = new WebpackConfig().merge({
+    node: {
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
+    },
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js'
