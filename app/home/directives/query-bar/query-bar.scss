@@ -8,9 +8,50 @@
 		width: 300px;
 		background: rgba(black, 0.5);
 		font-weight: 300;
-		color: white;
-		border-radius: 10px;
-		opacity: 0.6;
-	}
 
+#query-bar-container {
+	bottom: 135px;
+	font-size: 14px !important;
+	font-weight: 300 !important;
+	position: fixed;
+	width: 92%;
+	.suggested-questions-container {
+		.question {
+			color: whitesmoke;
+			margin-bottom: 5px;
+			&:first-child {
+				opacity: 0.65;
+			}
+			&:nth-child(2) {
+				opacity: 0.75;
+			}
+			&:last-child {
+				opacity: 1;
+			}
+		}
+	}
+	input[name='query'] {
+		background-color: black;
+		border: none;
+		color: white;
+		border-radius: 20px;
+		opacity: 0.4;
+		outline: none;
+		padding: 15px;
+		width: 100%;
+	}
+	label[for='query'] {
+		color: rgb(243, 165, 54);
+	}
+	input[name='query'] + label[for='query'] {
+		bottom: 145px;
+		font-size: inherit;
+		font-weight: inherit;
+		left: 65px;
+		position: fixed;
+		&:after {
+			content: " a character to place them into space";
+			color: whitesmoke;
+		}
+	}
 }
