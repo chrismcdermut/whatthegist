@@ -1,8 +1,8 @@
 <footer id="character-selection-container" class="footer">
     <div class="container">
-        <div class="row" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
-            <div class="col-xs-3 character-icon-container text-center" ng-repeat="n in [1, 2, 3, 4]">
-                <img class="character-icon" ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characters[leftIndex + $index].src}}.png">
+        <div class="row-fluid" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
+            <div class="col-xs-2 character-icon-container text-center" ng-repeat="n in [1, 2, 3, 4, 5]">
+                <img class="character-icon" ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characters[leftIndex + $index].src}}.png" ng-class="{'selected': $index === 2}">
             </div>
         </div>
     </div>

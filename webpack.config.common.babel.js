@@ -47,11 +47,6 @@ module.exports = new WebpackConfig().merge({
       title: 'Starter Theme',
       template: 'index.ejs',
       inject: 'body'
-    }),
-    new CopyWebpackPlugin([
-      {from: 'offline.html', to: 'offline.html'},
-      {from: 'service-worker.js', to: 'service-worker.js'},
-      {from: 'manifest.json', to: 'manifest.json'}
-    ])
+    })
   ]
-})
+});
