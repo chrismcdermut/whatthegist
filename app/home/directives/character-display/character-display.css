@@ -1,5 +1,7 @@
 #character-display-container {
-  margin-top: 25px; }
+  position: absolute;
+  top: 200px;
+  width: 100%; }
   #character-display-container #character-two-container {
     text-align: right; }
 
