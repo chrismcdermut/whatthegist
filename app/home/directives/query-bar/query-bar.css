@@ -40,15 +40,21 @@
     z-index: 1; }
     #query-bar-container .query-container .query-icon-container .search-icon.search-icon, #query-bar-container .query-container .query-icon-container .mic-icon.search-icon {
       background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-search.png");
-      background-size: 20px;
-      bottom: 15px;
+      background-size: 15px;
+      bottom: 11px;
       left: 15px;
-      width: 20px; }
+      width: 15px; }
     #query-bar-container .query-container .query-icon-container .search-icon.mic-icon, #query-bar-container .query-container .query-icon-container .mic-icon.mic-icon {
       background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-mic.png");
       background-size: 10px;
       bottom: 15px;
       right: 20px;
       width: 10px; }
+    #query-bar-container .query-container .query-icon-container .search-icon.spinner-icon, #query-bar-container .query-container .query-icon-container .mic-icon.spinner-icon {
+      background-image: url("http://sites.jamanetwork.com/help/images/spinner-transparent.gif");
+      background-size: 15px;
+      bottom: 11px;
+      left: 15px;
+      width: 15px; }
 
 /*# sourceMappingURL=query-bar.css.map */

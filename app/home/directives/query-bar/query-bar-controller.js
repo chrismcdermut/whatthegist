@@ -1,6 +1,7 @@
-function queryBarController($scope, watsonFactory, $log) {
+function queryBarController($scope, watsonFactory) {
     var characterOne = '';
     var characterTwo = '';
+    $scope.callingWatson = false;
     $scope.characterSelected = false;
     $scope.queryPlaceholder = '';
     $scope.characterSelected = false;
@@ -25,13 +26,13 @@ function queryBarController($scope, watsonFactory, $log) {
         return topFAQ;
     };
     $scope.submitToWatson = function() {
-        console.log('submitted input: ' + $scope.formInput);
+        $scope.callingWatson = true;
+
         watsonFactory.search($scope.formInput)
             .then(function(response) {
-                console.log('Watson raw response');
-                console.log(response);
                 $scope.rankedResult = [];
                 $scope.isNoResults = false;
+
                 if (response.status === 200 && response.data.numFound !== 0) {
                     let resultSet = response.data.docs;
                     for (let i = 0; i < 3; i++) {
@@ -43,7 +44,9 @@ function queryBarController($scope, watsonFactory, $log) {
 
                 $scope.$emit('gotAnswer', {answer: $scope.rankedResult});
             })
-            .catch($log.log)
+            .finally(function() {
+                $scope.callingWatson = false;
+            });
     };
 
     $scope.$on('clearSearchResults', function() {
