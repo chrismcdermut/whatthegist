@@ -27,7 +27,6 @@ function characterSelectionController($scope, $rootScope) {
     function clickCharacter(character) {
         $rootScope.$broadcast('character-clicked', character);
     }
-
 }
 
 export default characterSelectionController;
