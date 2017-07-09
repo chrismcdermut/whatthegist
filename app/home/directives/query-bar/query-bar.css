@@ -13,25 +13,42 @@
       opacity: 0.75; }
     #query-bar-container .suggested-questions-container .question:last-child {
       opacity: 1; }
-  #query-bar-container input[name='query'] {
+  #query-bar-container .query-container input[name='query'] {
     background-color: black;
     border: none;
     color: white;
     border-radius: 20px;
     opacity: 0.4;
     outline: none;
-    padding: 15px;
+    padding: 15px 40px;
     width: 100%; }
-  #query-bar-container label[for='query'] {
+  #query-bar-container .query-container label[for='query'] {
     color: #f3a536; }
-  #query-bar-container input[name='query'] + label[for='query'] {
+  #query-bar-container .query-container input[name='query'] + label[for='query'] {
     bottom: 145px;
     font-size: inherit;
     font-weight: inherit;
     left: 65px;
     position: fixed; }
-    #query-bar-container input[name='query'] + label[for='query']:after {
+    #query-bar-container .query-container input[name='query'] + label[for='query']:after {
       content: " a character to place them into space";
       color: whitesmoke; }
+  #query-bar-container .query-container .query-icon-container .search-icon, #query-bar-container .query-container .query-icon-container .mic-icon {
+    background-repeat: no-repeat;
+    height: 20px;
+    position: absolute;
+    z-index: 1; }
+    #query-bar-container .query-container .query-icon-container .search-icon.search-icon, #query-bar-container .query-container .query-icon-container .mic-icon.search-icon {
+      background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-search.png");
+      background-size: 20px;
+      bottom: 15px;
+      left: 15px;
+      width: 20px; }
+    #query-bar-container .query-container .query-icon-container .search-icon.mic-icon, #query-bar-container .query-container .query-icon-container .mic-icon.mic-icon {
+      background-image: url("https://s3.amazonaws.com/aws-website-btn-9i0hi/icon-mic.png");
+      background-size: 10px;
+      bottom: 15px;
+      right: 20px;
+      width: 10px; }
 
 /*# sourceMappingURL=query-bar.css.map */

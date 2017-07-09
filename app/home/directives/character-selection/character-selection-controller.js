@@ -25,11 +25,8 @@ function characterSelectionController($scope, $rootScope) {
     }
 
     function clickCharacter(character) {
-        console.log('the fucking character is clicked');
-        console.log(character);
-        $rootScope.$broadcast('character-clicked', {character});
+        $rootScope.$broadcast('character-clicked', character);
     }
-
 }
 
 export default characterSelectionController;
