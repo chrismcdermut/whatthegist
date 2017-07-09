@@ -34,7 +34,6 @@ function homeController($scope) {
             $scope.showCharacterTwo = false;
         }
     });
-
 }
 
 export default homeController;

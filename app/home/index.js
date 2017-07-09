@@ -4,16 +4,14 @@ import homeComponent from './home-component';
 import homeConfig from './home-config';
 import characterSelection from './directives/character-selection/index';
 import queryBar from './directives/query-bar/index';
-import characterOneDisplay from './directives/character-display/index';
-import characterTwoDisplay from './directives/character-display-two/index';
+import characterDisplay from './directives/character-display/index';
 
 require('./home.scss');
 
 angular.module('home', [])
     .directive('characterSelection', characterSelection)
     .directive('queryBar', queryBar)
-    .directive('characterOneDisplay', characterOneDisplay)
-    .directive('characterTwoDisplay', characterTwoDisplay)
+    .directive('characterDisplay', characterDisplay)
     .factory('homeFactory', homeFactory)
     .component('home', homeComponent)
     .config(homeConfig);

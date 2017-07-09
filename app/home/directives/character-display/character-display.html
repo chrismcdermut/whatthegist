@@ -1,3 +1,8 @@
-<div ng-show="showCharacterOne" class="container">
-<img class="character-display" ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characterOneImagePath}}.png"
+<div id="character-display-container" class="row">
+    <div id="character-one-container" class="col-xs-6" ng-show="showCharacterOne">
+        <img ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characterOneImagePath}}.png">
+    </div>
+    <div id="character-two-container" class="col-xs-6" ng-show="showCharacterTwo">
+        <img ng-src="https://s3.amazonaws.com/aws-website-btn-9i0hi/{{characterTwoImagePath}}.png">
+    </div>
 </div>
