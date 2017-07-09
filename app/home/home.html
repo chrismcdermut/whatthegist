@@ -1,6 +1,13 @@
 <div id="home-container">
     <character-display></character-display>
-    <watson-panel></watson-panel>
     <query-bar></query-bar>
     <character-selection></character-selection>
+    <div class="watson-query-results">
+        <ul ng-hide="isNoResults">
+            <li>{{rankedResult[0] | uppercase}}</li>
+            <li>{{rankedResult[1] | uppercase}}</li>
+            <li>{{rankedResult[2] | uppercase}}</li>
+        </ul>
+        <span class="no-results-found" ng-show="isNoResults">No Results Found!</span>
+    </div>
 </div>

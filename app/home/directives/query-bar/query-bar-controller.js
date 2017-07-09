@@ -46,6 +46,12 @@ function queryBarController($scope, watsonFactory, $log) {
             .catch($log.log)
     };
 
+    $scope.$on('clearSearchResults', function() {
+        $scope.queryPlaceholder = '';
+        $scope.characterSelected = false;
+        $scope.formInput = '';
+    });
+
     function characterClicked(event, character) {
         var name = character.name;
 
