@@ -1,6 +1,5 @@
 require('./character-selection.scss');
 
-import characterSelectionHTML from './character-selection.html';
 import characterSelectionController from './character-selection-controller';
 
 function characterSelectionDirective() {
@@ -8,7 +7,7 @@ function characterSelectionDirective() {
         scope: {},
         restrict: 'E',
         replace: true,
-        template: characterSelectionHTML,
+        template: require('./character-selection.html'),
         controller: characterSelectionController
     };
 }

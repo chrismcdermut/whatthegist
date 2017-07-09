@@ -10,20 +10,8 @@
     <meta name="theme-color" content="#EE3268">
     <link rel="manifest" href="manifest.json">
   </head>
-  <body> <!-- ng-strict-di -->
-    <div id="app-wrapper" ui-view class="container"></div>
+  <body class="container"> <!-- ng-strict-di -->
+    <splash></splash>
+    <div id="app-wrapper" ui-view></div>
   </body>
-  <script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }).catch(function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-  </script>
 </html>

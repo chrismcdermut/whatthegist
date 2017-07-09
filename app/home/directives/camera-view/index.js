@@ -1,6 +1,5 @@
 require('./camera-view.scss');
 
-import cameraViewHTML from './camera-view.html';
 import cameraViewController from './camera-view-controller';
 
 function cameraViewDirective() {
@@ -8,7 +7,7 @@ function cameraViewDirective() {
         scope: {},
         restrict: 'E',
         replace: true,
-        template: cameraViewHTML,
+        template: require('./camera-view.html'),
         controller: cameraViewController
     };
 }
