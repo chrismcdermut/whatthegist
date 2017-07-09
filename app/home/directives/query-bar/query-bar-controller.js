@@ -1,10 +1,10 @@
-function queryBarController($scope, questions) {
+function queryBarController($scope, questions, watsonFactory, $log) {
 
 	const question = questions;
 
  	var topFAQ = [
 		{
-			question: "Have they ever fought together",
+			question: "Have they ever fought together?",
 			rank: 1
 		},
 		{
@@ -20,6 +20,31 @@ function queryBarController($scope, questions) {
 	$scope.getTopFAQ = function (){
 			return topFAQ;
 	};
+
+	$scope.formInput = "Ask a question about DC heroes";
+	$scope.submitToWatson = function (){
+			console.log('submitted input: ' + $scope.formInput);
+			watsonFactory.search($scope.formInput)
+					.then(function(response) {
+							console.log('Watson raw response');
+							console.log(response);
+							$scope.rankedResult = [];
+							$scope.isNoResults = false;
+							if(response.status === 200 && response.data.numFound !== 0) {
+									let resultSet = response.data.docs;
+									for(let i = 0; i < 3; i++) {
+											$scope.rankedResult[i] = resultSet[i].title[0] || '';
+									}
+							} else {
+									$scope.isNoResults = true;
+							}
+							console.log('result from Watson');
+							console.log($scope.rankedResult);
+
+							$scope.$emit('gotAnswer',{answer: $scope.rankedResult});
+					})
+					.catch($log.log)
+	}
 
 
 }

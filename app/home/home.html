@@ -2,7 +2,7 @@
     <!--<camera-view></camera-view>-->    <!--Not ready yet-->
     <query-bar></query-bar>
     <character-selection></character-selection>
-    <div class="watson-query-results">
+    <div class="watson-query-results" ng-hide="noQuestionAsked">
         <ul ng-hide="isNoResults">
             <li>{{rankedResult[0] | uppercase}}</li>
             <li>{{rankedResult[1] | uppercase}}</li>

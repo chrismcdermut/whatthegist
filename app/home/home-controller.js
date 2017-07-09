@@ -1,20 +1,18 @@
 /* @ngInject */
 function homeController($log, watsonFactory, $scope) {
     //Pass the search query here and return top 3 result documents
-    watsonFactory.search("did batman ever die")
-        .then(function(response) {
-            $scope.rankedResult = [];
-            $scope.isNoResults = false;
-            if(response.status === 200 && response.data.numFound !== 0) {
-                let resultSet = response.data.docs;
-                for(let i = 0; i < 3; i++) {
-                    $scope.rankedResult[i] = resultSet[i].title[0] || '';
-                }
-            } else {
-                $scope.isNoResults = true;
-            }
-        })
-        .catch($log.log)
+    $scope.noQuestionAsked = true;
+    $scope.rankedResult = [];
+    $scope.$on('gotAnswer', function($event, data){
+        console.log('getting the answer in home controller');
+        console.log(data);
+        $scope.rankedResult = data.answer;
+        console.log('$scope.ranked here');
+        console.log($scope.rankedResult);
+
+        $scope.noQuestionAsked = false;
+        $scope.isNoResults = data && data.answer && data.answer.length ? false : true;
+    });
 }
 
 export default homeController;
