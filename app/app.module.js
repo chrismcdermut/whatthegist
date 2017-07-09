@@ -17,5 +17,4 @@ angular.module('app', [
     'ngTouch',
     'common',
     'home',
-    'splash'
 ]).config(appConfig);

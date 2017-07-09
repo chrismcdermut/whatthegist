@@ -13,7 +13,7 @@ function Watson($http) {
         // eslint-disable-next-line
         let url = `/watson`;
 
-        return $http.post(url, {query })
+        return $http.post(url, {query})
     }
 }
 
