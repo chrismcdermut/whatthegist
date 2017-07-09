@@ -9,6 +9,6 @@ import splash from './splash';
 
 angular.module('app', [
     uirouter,
-    'home',
-    'splash'
+    'splash',
+    'home'
 ]).config(appConfig);
