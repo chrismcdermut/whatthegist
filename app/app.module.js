@@ -7,12 +7,14 @@ import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import common from './common';
 import home from './home';
+import factory from './factories';
 import appConfig from './app-config';
 
 angular.module('app', [
     uirouter,
+    'factories',
     'ngAnimate',
     'ngTouch',
     'common',
-    'home'
+    'home',
 ]).config(appConfig);
