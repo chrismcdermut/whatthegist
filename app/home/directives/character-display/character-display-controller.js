@@ -1,4 +1,4 @@
-function characterDisplayController($scope) {
+function characterDisplayController($scope, $rootScope) {
     var characterOne = '';
     var characterTwo = '';
     $scope.showCharacterOne = false;
@@ -21,6 +21,9 @@ function characterDisplayController($scope) {
         } else if (name === characterTwo) {
             characterTwo = '';
             $scope.showCharacterTwo = false;
+        }
+        if(!$scope.showCharacterTwo && !$scope.showCharacterTwo) {
+            $rootScope.$broadcast('clearSearchResults', {clear: true});
         }
     });
 }
