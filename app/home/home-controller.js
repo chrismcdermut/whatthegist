@@ -1,20 +1,22 @@
-/* @ngInject */
-function homeController($log, watsonFactory, $scope) {
-    //Pass the search query here and return top 3 result documents
-    watsonFactory.search("did batman ever die")
-        .then(function(response) {
-            $scope.rankedResult = [];
-            $scope.isNoResults = false;
-            if(response.status === 200 && response.data.numFound !== 0) {
-                let resultSet = response.data.docs;
-                for(let i = 0; i < 3; i++) {
-                    $scope.rankedResult[i] = resultSet[i].title[0] || '';
-                }
-            } else {
-                $scope.isNoResults = true;
-            }
-        })
-        .catch($log.log)
+function homeController($scope) {
+    var currentCharacterOne = '';
+    var currentCharacterTwo = '';
+    var characterOneIsSet = false;
+    var characterTwoIsSet = false;
+
+    $scope.showCharacterOne = false;
+    $scope.$on('character-clicked', function(event, character) {
+        if (currentCharacterOne == '') {
+            currentCharacterOne = character.character.name;
+            $scope.showCharacterOne = true;
+            $scope.characterOneImagePath = character.character.figureOne;
+        } else {
+            currentCharacterOne = '';
+            $scope.showCharacterOne = false;
+        }
+
+    });
+
 }
 
 export default homeController;
