@@ -1,27 +1,10 @@
-function queryBarController($scope, questions) {
-
-	const question = questions;
-
- 	var topFAQ = [
-		{
-			question: "Have they ever fought together",
-			rank: 1
-		},
-		{
-			question: "Who is smarter?",
-			rank: 2
-		},
-		{
-			question: "When did they first meet?",
-			rank: 3
-		}
-	];
-
-	$scope.getTopFAQ = function (){
-			return topFAQ;
-	};
-
-
+function queryBarController($scope) {
+    $scope.characterSelected = false;
+    $scope.suggestedQuestions = {
+        "How many batmobiles are there": "111",
+        "How many crimes has he solved": "222",
+        "Who's his strongest enemy": "3333"
+    };
 }
 
 export default queryBarController;
