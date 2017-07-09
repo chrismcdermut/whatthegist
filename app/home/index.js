@@ -1,17 +1,17 @@
 import angular from 'angular';
-import homeFactory from './home-factory';
 import homeComponent from './home-component';
 import homeConfig from './home-config';
 import characterSelection from './directives/character-selection/index';
 import queryBar from './directives/query-bar/index';
 import characterDisplay from './directives/character-display/index';
+import watsonPanel from './directives/watson-panel/index';
 
 require('./home.scss');
 
 angular.module('home', [])
-    .directive('characterSelection', characterSelection)
-    .directive('queryBar', queryBar)
     .directive('characterDisplay', characterDisplay)
-    .factory('homeFactory', homeFactory)
+    .directive('characterSelection', characterSelection)
+    .directive('watsonPanel', watsonPanel)
+    .directive('queryBar', queryBar)
     .component('home', homeComponent)
     .config(homeConfig);
