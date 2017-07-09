@@ -1,19 +1,18 @@
 'use strict';
 
-require('./splash.scss')
+require('./splash.scss');
 
 function splashDirective($timeout) {
 
     return {
-        transclude: true,
         restrict: 'E',
+        replace: true,
         scope: {},
         template: require('./splash.html'),
         link: function (scope) {
-            scope.hideEl = false;
             $timeout(function() {
                 scope.hideEl = true;
-            }, 4000);
+            }, 3900);
         }
     };
 }

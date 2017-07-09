@@ -1,35 +1,10 @@
+import characterSelectionMap from './character-selection-map';
+
 function characterSelectionController($scope) {
-    var capacity = 4;
+    var capacity = 5;
 
     $scope.leftIndex = 0;
-    $scope.characters = [{
-        'name': 'Superman',
-        'src': 'btn-superman'
-    }, {
-        'name': 'Batman',
-        'src': 'btn-batman'
-    }, {
-        'name': 'Wonder Woman',
-        'src': 'btn-wonderwoman'
-    }, {
-        'name': 'Aquaman',
-        'src': 'btn-aquaman'
-    }, {
-        'name': 'Green Lantern',
-        'src': 'btn-greenlantern'
-    }, {
-        'name': 'Superman',
-        'src': 'btn-superman'
-    }, {
-        'name': 'Batman',
-        'src': 'btn-aquaman'
-    }, {
-        'name': 'Wonder Woman',
-        'src': 'btn-wonderwoman'
-    }, {
-        'name': 'Green Lantern',
-        'src': 'btn-greenlantern'
-    }];
+    $scope.characters = characterSelectionMap;
 
     $scope.swipeLeft = swipeLeft;
     $scope.swipeRight = swipeRight;
